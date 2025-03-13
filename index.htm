@@ -52,7 +52,8 @@
 
                 // Добавляем текстовую метку
                 const label = new ymaps.Placemark(city.coords, {
-                    iconContent: `${city.name} (${city.population})`
+                    //iconContent: `${city.name} (${city.population})`
+                    iconContent: `${city.population}`
                 }, {
                     preset: 'islands#redStretchyIcon', // Используем текстовую метку
                     iconColor: getColor(city.population),
