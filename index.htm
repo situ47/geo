@@ -39,8 +39,9 @@
             // Добавление меток на карту
             cities.forEach(city => {
                 const placemark = new ymaps.Placemark(city.coords, {
-                    hintContent: city.name,
-                    balloonContent: `${city.name}<br>Население: ${city.population}`
+                    //hintContent: city.name,
+                    //balloonContent: `${city.name}<br>Население: ${city.population}`
+                    balloonContent: `Население: ${city.population}`
                 }, {
                     //preset: 'islands#circleIcon',
                     //iconColor: getColor(city.population),
@@ -64,7 +65,7 @@
         }
     </script>
 </head>
-<body>2222223
+<body>2222224
     <div id="map"></div>
 </body>
 </html>
