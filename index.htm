@@ -43,7 +43,8 @@
                     balloonContent: `${city.name}<br>Население: ${city.population}`
                 }, {
                     preset: 'islands#circleIcon',
-                    iconColor: getColor(city.population)
+                    iconColor: getColor(city.population),
+                    iconImageHref: 'https://yastatic.net/s3/mapsapi/3.3.2/images/dot.png'
                 });
 
                 // Добавляем текстовую метку
