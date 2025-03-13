@@ -1,0 +1,22 @@
+const cities = [
+    { name: "Гатчина", population: 94377, coords: [59.5687, 30.1279] },
+    { name: "Выборг", population: 77222, coords: [60.7136, 28.7528] },
+    { name: "Сосновый Бор", population: 65367, coords: [59.8996, 29.0857] },
+    { name: "Тихвин", population: 57905, coords: [59.6445, 33.5421] },
+    { name: "Кириши", population: 51028, coords: [59.4497, 32.0087] },
+    { name: "Кингисепп", population: 47631, coords: [59.3733, 28.6139] },
+    { name: "Всеволожск", population: 72264, coords: [60.0215, 30.6545] },
+    { name: "Волхов", population: 44536, coords: [59.9005, 32.3527] },
+    { name: "Луга", population: 35698, coords: [58.7373, 29.8466] },
+    { name: "Сланцы", population: 32935, coords: [59.1177, 28.0881] },
+    { name: "Тосно", population: 39038, coords: [59.5407, 30.8776] },
+    { name: "Пикалёво", population: 20338, coords: [59.5131, 34.1772] },
+    { name: "Подпорожье", population: 17494, coords: [60.9125, 34.1678] },
+    { name: "Бокситогорск", population: 15670, coords: [59.4735, 33.8479] },
+    { name: "Лодейное Поле", population: 18952, coords: [60.7321, 33.5526] },
+    { name: "Приозерск", population: 18477, coords: [61.0396, 30.1297] },
+    { name: "Коммунар", population: 20721, coords: [59.6216, 30.3939] },
+    { name: "Никольское", population: 22355, coords: [59.7041, 30.7889] },
+    { name: "Отрадное", population: 25706, coords: [59.7745, 30.8131] },
+    { name: "Сертолово", population: 68241, coords: [60.1449, 30.2095] }
+];
