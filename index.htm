@@ -54,11 +54,11 @@
                 const label = new ymaps.Placemark(city.coords, {
                     //iconContent: `${city.name} (${city.population})`
                     iconContent: `${city.population} чел.`
-                }, {
+                }/*, {
                     preset: 'islands#redStretchyIcon', // Используем текстовую метку
                     iconColor: '#ff6600', //getColor(city.population),
                     hideIconOnBalloonOpen: false
-                });
+                }*/);
 
                 map.geoObjects.add(placemark);
                 map.geoObjects.add(label);
