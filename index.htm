@@ -51,7 +51,7 @@
                     //iconImageHref: 'https://yastatic.net/s3/mapsapi/3.3.2/images/dot.png',
                     //iconImageSize: [16, 16], // Размер точки
                     //iconOffset: [0, -20] // Смещение метки
-                    hideIcon: True
+                    //hideIcon: True
                 });
                  
                 // Добавляем текстовую метку
@@ -61,8 +61,8 @@
                 }, {
                     preset: 'islands#redStretchyIcon', // Используем текстовую метку
                     iconColor: getColor(city.population), //'green', //,
-                    hideIconOnBalloonOpen: false
-                    //iconOffset: [0, -20] // Смещение метки
+                    hideIconOnBalloonOpen: false,
+                    iconOffset: [0, -20] // Смещение метки
                 });
 
                 map.geoObjects.add(placemark);
