@@ -38,7 +38,7 @@
 
             // Добавление меток на карту
             cities.forEach(city => {
-                const placemark = new ymaps.Placemark(city.coords, {
+                /*const placemark = new ymaps.Placemark(city.coords, {
                     //hintContent: city.name,
                     //balloonContent: `${city.name}<br>Население: ${city.population}`
                     balloonContent: `Население: ${city.population}`
@@ -49,7 +49,7 @@
                     //iconImageSize: [16, 16], // Размер точки
                     //iconImageOffset: [-8, -8] // Смещение точки
                 });
-
+                 */
                 // Добавляем текстовую метку
                 const label = new ymaps.Placemark(city.coords, {
                     //iconContent: `${city.name} (${city.population})`
