@@ -31,11 +31,12 @@
             // Функция для определения цвета метки в зависимости от численности населения
             function getColor(population) {
                 //if (population > 80000) return '#ff0000'; // Красный
-                if (population > 80000) return 'red'; // Красный
+                if (population > 70000) return 'red'; // Красный
                 //if (population > 20000) return '#ff6600'; // Оранжевый
+                if (population > 20000) return 'green'; // Зеленый
                 //if (population > 10000) return '#ffcc00'; // Желтый
                 //return '#00cc00'; // Зеленый
-                return 'green'; //'#00cc00'; // Зеленый
+                return 'blue'; //'#00cc00'; // Синий
             }
 
             // Добавление меток на карту
