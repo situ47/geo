@@ -40,19 +40,7 @@
             }
 
             // Добавление меток на карту
-            cities.forEach(city => {
-                const placemark = new ymaps.Placemark(city.coords, {
-                    //hintContent: city.name,
-                    //balloonContent: `${city.name}<br>Население: ${city.population}`
-                    ///balloonContent: `Население: ${city.population}`                    
-                }, {
-                    preset: 'islands#circleIcon',
-                    ///iconColor: 'green', //getColor(city.population),
-                    //iconImageHref: 'https://yastatic.net/s3/mapsapi/3.3.2/images/dot.png',
-                    //iconImageSize: [16, 16], // Размер точки
-                    //iconOffset: [0, -20] // Смещение метки  
-                    //placemark.options.set('visible', false)
-                });
+         
                  
                 // Добавляем текстовую метку
                 const label = new ymaps.Placemark(city.coords, {
