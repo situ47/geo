@@ -33,7 +33,8 @@
                 //if (population > 80000) return '#ff0000'; // Красный
                 //if (population > 20000) return '#ff6600'; // Оранжевый
                 //if (population > 10000) return '#ffcc00'; // Желтый
-                return '#00cc00'; // Зеленый
+                //return '#00cc00'; // Зеленый
+                return 'green'; //'#00cc00'; // Зеленый
             }
 
             // Добавление меток на карту
@@ -56,7 +57,7 @@
                     iconContent: `${city.population} чел.`
                 }, {
                     preset: 'islands#redStretchyIcon', // Используем текстовую метку
-                    iconColor: 'green', //'#ff6600', //getColor(city.population),
+                    iconColor: getColor(city.population), //'green', //,
                     hideIconOnBalloonOpen: false
                 });
 
