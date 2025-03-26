@@ -29,7 +29,7 @@
             const cities = await response.json();
 
             // Функция для определения цвета метки в зависимости от численности населения
-            function getColor(population) {
+            function getColor(group) {
                 //if (population > 80000) return '#ff0000'; // Красный
                 if (group == "DB3") return 'red'; // Красный
                 //if (population > 20000) return '#ff6600'; // Оранжевый
@@ -44,12 +44,12 @@
            
                 // Добавляем текстовую метку
                 const label = new ymaps.Placemark(city.coords, {
-                    //iconContent: `${city.name} (${city.population})`
-                    iconContent: `${city.population}`
+                    //iconContent: `${city.name} (${city.group})`
+                    iconContent: `${city.group}`
                 }, {
                     preset: 'islands#redStretchyIcon', // Используем текстовую метку
-                    iconColor: getColor(city.population), //'green', //,
-                    hideIconOnBalloonOpen: population,
+                    iconColor: getColor(city.group), //'green', //,
+                    hideIconOnBalloonOpen: group,
                     iconOffset: [0, -10] // Смещение метки
                 });
 
