@@ -39,7 +39,7 @@
             cities.forEach(city => {
                 // Добавляем текстовую метку
                 const label = new ymaps.Placemark(city.coords, {
-                    //iconContent: `${city.population} чел.`
+                    //iconContent: `${city.population}`
                     iconContent: `${city.group} чело.`
                 }, {
                     preset: 'islands#redStretchyIcon',
