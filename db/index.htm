@@ -28,32 +28,25 @@
             const response = await fetch('data.json');
             const cities = await response.json();
 
-            // Функция для определения цвета метки в зависимости от численности населения
+            // Функция для определения цвета метки в зависимости от группы
             function getColor(group) {
-                //if (population > 80000) return '#ff0000'; // Красный
-                if (group == "DB3") return 'red'; // Красный
-                //if (population > 20000) return '#ff6600'; // Оранжевый
-                if (group == "DB2") return 'green'; // Зеленый
-                //if (population > 10000) return '#ffcc00'; // Желтый
-                //return '#00cc00'; // Зеленый
-                return 'blue'; //'#00cc00'; // Синий
+                if (group === 'DB1') return 'red';    // Красный для DB1
+                if (group === 'DB2') return 'green';  // Зеленый для DB2
+                return 'blue';                        // Синий для остальных случаев
             }
 
             // Добавление меток на карту
-             cities.forEach(city => {
-           
+            cities.forEach(city => {
                 // Добавляем текстовую метку
                 const label = new ymaps.Placemark(city.coords, {
-                    //iconContent: `${city.name} (${city.group})`
-                    iconContent: `${city.group}`
+                    iconContent: `${city.population} чел.`
                 }, {
-                    preset: 'islands#redStretchyIcon', // Используем текстовую метку
-                    iconColor: getColor(city.group), //'green', //,
-                    hideIconOnBalloonOpen: group,
-                    iconOffset: [0, -10] // Смещение метки
+                    preset: 'islands#redStretchyIcon',
+                    iconColor: getColor(city.group),
+                    hideIconOnBalloonOpen: false,
+                    iconOffset: [0, -10]
                 });
 
-                //map.geoObjects.add(placemark);
                 map.geoObjects.add(label);
             });
         }
